@@ -1042,6 +1042,7 @@
 		0D24A2312722719400C69F8D /* dtmf-4.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0D818BD525EDF8BE00824F8E /* dtmf-4.caf */; };
 		0D24A2322722719400C69F8D /* dtmf-star.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0D818BD425EDF8BE00824F8E /* dtmf-star.caf */; };
 		0D24A2332722719400C69F8D /* dtmf-5.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0D818BD925EDF8BF00824F8E /* dtmf-5.caf */; };
+		0D252B112EAD7C7500851164 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D252B102EAD7C7500851164 /* MailCore2 */; };
 		0D289FB725B2030900B242EF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D289FB625B2030900B242EF /* Common.swift */; };
 		0D2D5CBF25C9C48500286707 /* iPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2D5CBE25C9C48500286707 /* iPod.swift */; };
 		0D371FD625AB7B6D00E4D723 /* LockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D371FD525AB7B6D00E4D723 /* LockScreen.swift */; };
@@ -1054,41 +1055,31 @@
 		0D39B3FC25AA9EB700B42A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D39B3FA25AA9EB700B42A84 /* LaunchScreen.storyboard */; };
 		0D39B40725AA9EB700B42A84 /* OldOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39B40625AA9EB700B42A84 /* OldOSTests.swift */; };
 		0D39B41225AA9EB700B42A84 /* OldOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D39B41125AA9EB700B42A84 /* OldOSUITests.swift */; };
+		0D431C372EAD6C62009BCABA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0DEF67062610F50500341037 /* Alamofire */; };
 		0D4BBF5325B2105000FCFB2E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BBF5225B2105000FCFB2E /* Settings.swift */; };
 		0D50B65E2620DC020046F006 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D50B65D2620DC020046F006 /* Weather.swift */; };
 		0D53C5B225AF58D000B775ED /* LocationProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 0D53C5B125AF58D000B775ED /* LocationProvider */; };
 		0D5AC821274C74C000669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC820274C74C000669569 /* OAuth2 */; };
-		0D5AC823274C74F700669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC822274C74F700669569 /* MailCore2 */; };
 		0D5AC825274C751100669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC824274C751100669569 /* OAuth2 */; };
 		0D5AC827274C751D00669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC826274C751D00669569 /* SwiftKeychainWrapper */; };
-		0D5AC829274C752200669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC828274C752200669569 /* MailCore2 */; };
 		0D5AC82B274C752600669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC82A274C752600669569 /* OAuth2 */; };
 		0D5AC82D274C752B00669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC82C274C752B00669569 /* SwiftKeychainWrapper */; };
-		0D5AC82F274C753100669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC82E274C753100669569 /* MailCore2 */; };
 		0D5AC831274C753500669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC830274C753500669569 /* OAuth2 */; };
 		0D5AC833274C753900669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC832274C753900669569 /* SwiftKeychainWrapper */; };
-		0D5AC835274C754200669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC834274C754200669569 /* MailCore2 */; };
 		0D5AC837274C754600669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC836274C754600669569 /* OAuth2 */; };
 		0D5AC839274C754B00669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC838274C754B00669569 /* SwiftKeychainWrapper */; };
-		0D5AC83B274C754F00669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC83A274C754F00669569 /* MailCore2 */; };
 		0D5AC83D274C755500669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC83C274C755500669569 /* OAuth2 */; };
 		0D5AC83F274C755B00669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC83E274C755B00669569 /* SwiftKeychainWrapper */; };
-		0D5AC841274CA4A500669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC840274CA4A500669569 /* MailCore2 */; };
 		0D5AC843274CA4A900669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC842274CA4A900669569 /* OAuth2 */; };
 		0D5AC845274CA4AE00669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC844274CA4AE00669569 /* SwiftKeychainWrapper */; };
-		0D5AC847274CA4B300669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC846274CA4B300669569 /* MailCore2 */; };
 		0D5AC849274CA4B700669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC848274CA4B700669569 /* OAuth2 */; };
 		0D5AC84B274CA4BB00669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC84A274CA4BB00669569 /* SwiftKeychainWrapper */; };
-		0D5AC84D274CA4C100669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC84C274CA4C100669569 /* MailCore2 */; };
 		0D5AC84F274CA4C500669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC84E274CA4C500669569 /* SwiftKeychainWrapper */; };
 		0D5AC851274CA4CA00669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC850274CA4CA00669569 /* OAuth2 */; };
-		0D5AC853274CA4D100669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC852274CA4D100669569 /* MailCore2 */; };
 		0D5AC855274CA4D500669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC854274CA4D500669569 /* OAuth2 */; };
 		0D5AC857274CA4D900669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC856274CA4D900669569 /* SwiftKeychainWrapper */; };
-		0D5AC859274CA4DE00669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC858274CA4DE00669569 /* MailCore2 */; };
 		0D5AC85B274CA4E200669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC85A274CA4E200669569 /* SwiftKeychainWrapper */; };
 		0D5AC85D274CA4E500669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC85C274CA4E500669569 /* OAuth2 */; };
-		0D5AC85F274CA4EC00669569 /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC85E274CA4EC00669569 /* MailCore2 */; };
 		0D5AC861274CA4F000669569 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC860274CA4F000669569 /* OAuth2 */; };
 		0D5AC863274CA4F400669569 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0D5AC862274CA4F400669569 /* SwiftKeychainWrapper */; };
 		0D6715BE2864BCD0002CCC47 /* PhoneNumberFormatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D11D89025EDD2BA00AB2F2B /* PhoneNumberFormatRule.swift */; };
@@ -1194,7 +1185,7 @@
 		0D80447E26628BF100000171 /* end_video_record.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0D80447C26628BF100000171 /* end_video_record.caf */; };
 		0D8044832662956100000171 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8044822662956100000171 /* Photos.swift */; };
 		0D80448B26653CE200000171 /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D80448A26653CE200000171 /* Stocks.swift */; };
-		0D8045052669CAB900000171 /* Camera-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0D8045042669CAB900000171 /* Camera-SwiftUI */; };
+		0D8045052669CAB900000171 /* Camera-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0D8045042669CAB900000171 /* Camera-SwiftUI */; settings = {ATTRIBUTES = (Required, ); }; };
 		0D80450A266A924B00000171 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D804509266A924B00000171 /* Calendar.swift */; };
 		0D818BCE25EDDFFB00824F8E /* dtmf-0.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0D818BCA25EDDF0700824F8E /* dtmf-0.caf */; };
 		0D818BE125EDF98300824F8E /* dtmf-8.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0D818BDB25EDF8C000824F8E /* dtmf-8.caf */; };
@@ -1217,6 +1208,34 @@
 		0D818C802600500B00824F8E /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D818C7F2600500B00824F8E /* AppStore.swift */; };
 		0D818C862603FCDA00824F8E /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0D818C852603FCDA00824F8E /* FeedKit */; };
 		0D818C8C26059B4500824F8E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0D818C8B26059B4500824F8E /* SDWebImageSwiftUI */; };
+		0D90AAE02EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE12EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE22EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE32EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE42EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE52EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE62EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE72EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE82EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAE92EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAEA2EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAEB2EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAEC2EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D90AAED2EAD25B1001366C9 /* Compass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D90AADF2EAD25B1001366C9 /* Compass.swift */; };
+		0D9F02E22EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02E32EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02E42EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02E52EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02E62EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02E72EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02E82EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02E92EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02EA2EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02EB2EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02EC2EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02ED2EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02EE2EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
+		0D9F02EF2EAE721100D9AAB4 /* Voice Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */; };
 		0DAA7CF726CB542800F62A27 /* XCDYouTubeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0DAA7CF626CB542800F62A27 /* XCDYouTubeKit */; };
 		0DB3F0A92683D0E300FBFAD8 /* ImageMoveAndScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3F0A72683D0E200FBFAD8 /* ImageMoveAndScale.swift */; };
 		0DB3F0AA2683D0E300FBFAD8 /* ImageMoveAndScale+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB3F0A82683D0E300FBFAD8 /* ImageMoveAndScale+Extensions.swift */; };
@@ -1321,12 +1340,10 @@
 		0DDBD2142624FF6600106345 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DDBD2132624FF6600106345 /* cities.json */; };
 		0DEF66F6260CFBF800341037 /* iTunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF66F5260CFBF800341037 /* iTunes.swift */; };
 		0DEF66FB2610240F00341037 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 0DEF66FA2610240F00341037 /* style.css */; };
-		0DEF67072610F50500341037 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0DEF67062610F50500341037 /* Alamofire */; };
 		0DEF6710261101AE00341037 /* SearchPlistCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF670F261101AE00341037 /* SearchPlistCodable.swift */; };
 		0DEF6715261279A200341037 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF6714261279A200341037 /* Notes.swift */; };
 		0DEF67242613CBDE00341037 /* DALinedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF67232613CBDE00341037 /* DALinedTextView.m */; };
 		0DEF67352617668200341037 /* Note.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DEF67332617668200341037 /* Note.xcdatamodeld */; };
-		0DFCA90D272C83530050009D /* MailCore2 in Frameworks */ = {isa = PBXBuildFile; productRef = 0DFCA90C272C83530050009D /* MailCore2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1395,7 +1412,6 @@
 		0D11D89425EDD2BB00AB2F2B /* PhoneFormatSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormatSeparator.swift; sourceTree = "<group>"; };
 		0D11D89525EDD2BC00AB2F2B /* PhoneFormatRuleset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormatRuleset.swift; sourceTree = "<group>"; };
 		0D18DF9B281C408500C720F9 /* OldOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldOS13.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D18DF9C281C408B00C720F9 /* OldOS12 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OldOS12 copy-Info.plist"; path = "/Users/zanekleinberg/Desktop/The-OldOS-Project/OldOS/OldOS12 copy-Info.plist"; sourceTree = "<absolute>"; };
 		0D249E11272270C300C69F8D /* OldOS2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldOS2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D249E872722715B00C69F8D /* OldOS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldOS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D249EFD2722715C00C69F8D /* OldOS4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldOS4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1427,7 +1443,6 @@
 		0D4BBF5225B2105000FCFB2E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0D50B65D2620DC020046F006 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		0D6716222864BCD0002CCC47 /* OldOS14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldOS14.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D6716232864BCD1002CCC47 /* OldOS13 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OldOS13 copy-Info.plist"; path = "/Users/zanekleinberg/Desktop/The-OldOS-Project/OldOS/OldOS13 copy-Info.plist"; sourceTree = "<absolute>"; };
 		0D80443D265C4CC500000171 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		0D804448265C694C00000171 /* Youtube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube.swift; sourceTree = "<group>"; };
 		0D804450265C705200000171 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
@@ -1457,10 +1472,12 @@
 		0D818C3525F92A9200824F8E /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		0D818C7F2600500B00824F8E /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
 		0D8E49592769397A007A4100 /* Camera-SwiftUI-main */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Camera-SwiftUI-main"; sourceTree = "<group>"; };
+		0D90AADF2EAD25B1001366C9 /* Compass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compass.swift; sourceTree = "<group>"; };
+		0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Voice Memos.swift"; sourceTree = "<group>"; };
+		0DA3677F2EAD7C35002DFF8A /* mailcore2 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = mailcore2; sourceTree = "<group>"; };
 		0DB3F0A72683D0E200FBFAD8 /* ImageMoveAndScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMoveAndScale.swift; sourceTree = "<group>"; };
 		0DB3F0A82683D0E300FBFAD8 /* ImageMoveAndScale+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageMoveAndScale+Extensions.swift"; sourceTree = "<group>"; };
 		0DBD2935274C70F8003120D9 /* OldOS12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldOS12.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DBD2936274C7101003120D9 /* OldOS12-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OldOS12-Info.plist"; path = "/Users/zanekleinberg/Desktop/The-OldOS-Project/OldOS/OldOS12-Info.plist"; sourceTree = "<absolute>"; };
 		0DC40DDF2715DA7300BE910C /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		0DC40DE02715DA7300BE910C /* FXImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXImageView.m; sourceTree = "<group>"; };
 		0DC40DE12715DA7400BE910C /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
@@ -1530,7 +1547,6 @@
 				0D5AC827274C751D00669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D249DE7272270C300C69F8D /* SwiftUIPager in Frameworks */,
 				0D249DE8272270C300C69F8D /* Alamofire in Frameworks */,
-				0D5AC823274C74F700669569 /* MailCore2 in Frameworks */,
 				0D249DE9272270C300C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D249DEA272270C300C69F8D /* FeedKit in Frameworks */,
 				0D249DEB272270C300C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1551,7 +1567,6 @@
 				0D5AC82D274C752B00669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D249E5D2722715B00C69F8D /* SwiftUIPager in Frameworks */,
 				0D249E5E2722715B00C69F8D /* Alamofire in Frameworks */,
-				0D5AC829274C752200669569 /* MailCore2 in Frameworks */,
 				0D249E5F2722715B00C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D249E602722715B00C69F8D /* FeedKit in Frameworks */,
 				0D249E612722715B00C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1572,7 +1587,6 @@
 				0D5AC833274C753900669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D249ED32722715C00C69F8D /* SwiftUIPager in Frameworks */,
 				0D249ED42722715C00C69F8D /* Alamofire in Frameworks */,
-				0D5AC82F274C753100669569 /* MailCore2 in Frameworks */,
 				0D249ED52722715C00C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D249ED62722715C00C69F8D /* FeedKit in Frameworks */,
 				0D249ED72722715C00C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1593,7 +1607,6 @@
 				0D5AC839274C754B00669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D249F492722715D00C69F8D /* SwiftUIPager in Frameworks */,
 				0D249F4A2722715D00C69F8D /* Alamofire in Frameworks */,
-				0D5AC835274C754200669569 /* MailCore2 in Frameworks */,
 				0D249F4B2722715D00C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D249F4C2722715D00C69F8D /* FeedKit in Frameworks */,
 				0D249F4D2722715D00C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1614,7 +1627,6 @@
 				0D5AC83F274C755B00669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D249FBF2722715E00C69F8D /* SwiftUIPager in Frameworks */,
 				0D249FC02722715E00C69F8D /* Alamofire in Frameworks */,
-				0D5AC83B274C754F00669569 /* MailCore2 in Frameworks */,
 				0D249FC12722715E00C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D249FC22722715E00C69F8D /* FeedKit in Frameworks */,
 				0D249FC32722715E00C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1635,7 +1647,6 @@
 				0D5AC845274CA4AE00669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D24A0352722716000C69F8D /* SwiftUIPager in Frameworks */,
 				0D24A0362722716000C69F8D /* Alamofire in Frameworks */,
-				0D5AC841274CA4A500669569 /* MailCore2 in Frameworks */,
 				0D24A0372722716000C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D24A0382722716000C69F8D /* FeedKit in Frameworks */,
 				0D24A0392722716000C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1656,7 +1667,6 @@
 				0D5AC84B274CA4BB00669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D24A0AB2722716500C69F8D /* SwiftUIPager in Frameworks */,
 				0D24A0AC2722716500C69F8D /* Alamofire in Frameworks */,
-				0D5AC847274CA4B300669569 /* MailCore2 in Frameworks */,
 				0D24A0AD2722716500C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D24A0AE2722716500C69F8D /* FeedKit in Frameworks */,
 				0D24A0AF2722716500C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1677,7 +1687,6 @@
 				0D24A1212722716600C69F8D /* SwiftUIPager in Frameworks */,
 				0D5AC84F274CA4C500669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D24A1222722716600C69F8D /* Alamofire in Frameworks */,
-				0D5AC84D274CA4C100669569 /* MailCore2 in Frameworks */,
 				0D24A1232722716600C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D24A1242722716600C69F8D /* FeedKit in Frameworks */,
 				0D24A1252722716600C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1698,7 +1707,6 @@
 				0D5AC857274CA4D900669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D24A1972722719000C69F8D /* SwiftUIPager in Frameworks */,
 				0D24A1982722719000C69F8D /* Alamofire in Frameworks */,
-				0D5AC853274CA4D100669569 /* MailCore2 in Frameworks */,
 				0D24A1992722719000C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D24A19A2722719000C69F8D /* FeedKit in Frameworks */,
 				0D24A19B2722719000C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1719,7 +1727,6 @@
 				0D24A20D2722719400C69F8D /* SwiftUIPager in Frameworks */,
 				0D5AC85B274CA4E200669569 /* SwiftKeychainWrapper in Frameworks */,
 				0D24A20E2722719400C69F8D /* Alamofire in Frameworks */,
-				0D5AC859274CA4DE00669569 /* MailCore2 in Frameworks */,
 				0D24A20F2722719400C69F8D /* XCDYouTubeKit in Frameworks */,
 				0D24A2102722719400C69F8D /* FeedKit in Frameworks */,
 				0D24A2112722719400C69F8D /* PureSwiftUITools in Frameworks */,
@@ -1731,16 +1738,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D431C372EAD6C62009BCABA /* Alamofire in Frameworks */,
+				0D252B112EAD7C7500851164 /* MailCore2 in Frameworks */,
 				0D8045052669CAB900000171 /* Camera-SwiftUI in Frameworks */,
 				0D5AC821274C74C000669569 /* OAuth2 in Frameworks */,
 				0D818C8C26059B4500824F8E /* SDWebImageSwiftUI in Frameworks */,
 				0DBD28BB274C21F8003120D9 /* SwiftKeychainWrapper in Frameworks */,
 				0D11D85A25E1F9A500AB2F2B /* SwiftyJSON in Frameworks */,
-				0DFCA90D272C83530050009D /* MailCore2 in Frameworks */,
 				0D53C5B225AF58D000B775ED /* LocationProvider in Frameworks */,
 				0D249CB0271FC6A800C69F8D /* Introspect in Frameworks */,
 				0D11D86F25E34EBE00AB2F2B /* SwiftUIPager in Frameworks */,
-				0DEF67072610F50500341037 /* Alamofire in Frameworks */,
 				0DAA7CF726CB542800F62A27 /* XCDYouTubeKit in Frameworks */,
 				0D818C862603FCDA00824F8E /* FeedKit in Frameworks */,
 				0D371FDC25AB854F00E4D723 /* PureSwiftUITools in Frameworks */,
@@ -1797,7 +1804,6 @@
 				0D5AC863274CA4F400669569 /* SwiftKeychainWrapper in Frameworks */,
 				0DBD290A274C70F8003120D9 /* SwiftUIPager in Frameworks */,
 				0DBD290B274C70F8003120D9 /* Alamofire in Frameworks */,
-				0D5AC85F274CA4EC00669569 /* MailCore2 in Frameworks */,
 				0DBD290C274C70F8003120D9 /* XCDYouTubeKit in Frameworks */,
 				0DBD290D274C70F8003120D9 /* FeedKit in Frameworks */,
 				0DBD290E274C70F8003120D9 /* PureSwiftUITools in Frameworks */,
@@ -1869,8 +1875,6 @@
 				0D39B41025AA9EB700B42A84 /* OldOSUITests */,
 				0D39B3ED25AA9EB600B42A84 /* Products */,
 				0D371FE025AB863B00E4D723 /* Frameworks */,
-				0D18DF9C281C408B00C720F9 /* OldOS12 copy-Info.plist */,
-				0D6716232864BCD1002CCC47 /* OldOS13 copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1921,6 +1925,8 @@
 				0D804448265C694C00000171 /* Youtube.swift */,
 				0D804450265C705200000171 /* Contacts.swift */,
 				0D804455265C78C500000171 /* Messages.swift */,
+				0D90AADF2EAD25B1001366C9 /* Compass.swift */,
+				0D9F02E12EAE721100D9AAB4 /* Voice Memos.swift */,
 				0D8044822662956100000171 /* Photos.swift */,
 				0D80448A26653CE200000171 /* Stocks.swift */,
 				0DEF67332617668200341037 /* Note.xcdatamodeld */,
@@ -1928,6 +1934,7 @@
 				0DEF670F261101AE00341037 /* SearchPlistCodable.swift */,
 				0D804509266A924B00000171 /* Calendar.swift */,
 				0DDBD2132624FF6600106345 /* cities.json */,
+				0DA3677F2EAD7C35002DFF8A /* mailcore2 */,
 				0D8E49592769397A007A4100 /* Camera-SwiftUI-main */,
 				0DC40DD82715DA6100BE910C /* Carousel */,
 				0D0FB4A3262A4FC9008AE4C5 /* Page Curl */,
@@ -1949,7 +1956,6 @@
 				0DFCA902272C7ACE0050009D /* OldOS9-Info.plist */,
 				0DFCA903272C7ACE0050009D /* OldOS10-Info.plist */,
 				0DFCA901272C7ACD0050009D /* OldOS11-Info.plist */,
-				0DBD2936274C7101003120D9 /* OldOS12-Info.plist */,
 				0D39B3F725AA9EB700B42A84 /* Preview Content */,
 			);
 			path = OldOS;
@@ -2110,7 +2116,6 @@
 				0D249DAC272270C300C69F8D /* Camera-SwiftUI */,
 				0D249DAD272270C300C69F8D /* XCDYouTubeKit */,
 				0D249DAF272270C300C69F8D /* Introspect */,
-				0D5AC822274C74F700669569 /* MailCore2 */,
 				0D5AC824274C751100669569 /* OAuth2 */,
 				0D5AC826274C751D00669569 /* SwiftKeychainWrapper */,
 			);
@@ -2142,7 +2147,6 @@
 				0D249E222722715B00C69F8D /* Camera-SwiftUI */,
 				0D249E232722715B00C69F8D /* XCDYouTubeKit */,
 				0D249E252722715B00C69F8D /* Introspect */,
-				0D5AC828274C752200669569 /* MailCore2 */,
 				0D5AC82A274C752600669569 /* OAuth2 */,
 				0D5AC82C274C752B00669569 /* SwiftKeychainWrapper */,
 			);
@@ -2174,7 +2178,6 @@
 				0D249E982722715C00C69F8D /* Camera-SwiftUI */,
 				0D249E992722715C00C69F8D /* XCDYouTubeKit */,
 				0D249E9B2722715C00C69F8D /* Introspect */,
-				0D5AC82E274C753100669569 /* MailCore2 */,
 				0D5AC830274C753500669569 /* OAuth2 */,
 				0D5AC832274C753900669569 /* SwiftKeychainWrapper */,
 			);
@@ -2206,7 +2209,6 @@
 				0D249F0E2722715D00C69F8D /* Camera-SwiftUI */,
 				0D249F0F2722715D00C69F8D /* XCDYouTubeKit */,
 				0D249F112722715D00C69F8D /* Introspect */,
-				0D5AC834274C754200669569 /* MailCore2 */,
 				0D5AC836274C754600669569 /* OAuth2 */,
 				0D5AC838274C754B00669569 /* SwiftKeychainWrapper */,
 			);
@@ -2238,7 +2240,6 @@
 				0D249F842722715E00C69F8D /* Camera-SwiftUI */,
 				0D249F852722715E00C69F8D /* XCDYouTubeKit */,
 				0D249F872722715E00C69F8D /* Introspect */,
-				0D5AC83A274C754F00669569 /* MailCore2 */,
 				0D5AC83C274C755500669569 /* OAuth2 */,
 				0D5AC83E274C755B00669569 /* SwiftKeychainWrapper */,
 			);
@@ -2270,7 +2271,6 @@
 				0D249FFA2722716000C69F8D /* Camera-SwiftUI */,
 				0D249FFB2722716000C69F8D /* XCDYouTubeKit */,
 				0D249FFD2722716000C69F8D /* Introspect */,
-				0D5AC840274CA4A500669569 /* MailCore2 */,
 				0D5AC842274CA4A900669569 /* OAuth2 */,
 				0D5AC844274CA4AE00669569 /* SwiftKeychainWrapper */,
 			);
@@ -2302,7 +2302,6 @@
 				0D24A0702722716500C69F8D /* Camera-SwiftUI */,
 				0D24A0712722716500C69F8D /* XCDYouTubeKit */,
 				0D24A0732722716500C69F8D /* Introspect */,
-				0D5AC846274CA4B300669569 /* MailCore2 */,
 				0D5AC848274CA4B700669569 /* OAuth2 */,
 				0D5AC84A274CA4BB00669569 /* SwiftKeychainWrapper */,
 			);
@@ -2334,7 +2333,6 @@
 				0D24A0E62722716600C69F8D /* Camera-SwiftUI */,
 				0D24A0E72722716600C69F8D /* XCDYouTubeKit */,
 				0D24A0E92722716600C69F8D /* Introspect */,
-				0D5AC84C274CA4C100669569 /* MailCore2 */,
 				0D5AC84E274CA4C500669569 /* SwiftKeychainWrapper */,
 				0D5AC850274CA4CA00669569 /* OAuth2 */,
 			);
@@ -2366,7 +2364,6 @@
 				0D24A15C2722719000C69F8D /* Camera-SwiftUI */,
 				0D24A15D2722719000C69F8D /* XCDYouTubeKit */,
 				0D24A15F2722719000C69F8D /* Introspect */,
-				0D5AC852274CA4D100669569 /* MailCore2 */,
 				0D5AC854274CA4D500669569 /* OAuth2 */,
 				0D5AC856274CA4D900669569 /* SwiftKeychainWrapper */,
 			);
@@ -2398,7 +2395,6 @@
 				0D24A1D22722719400C69F8D /* Camera-SwiftUI */,
 				0D24A1D32722719400C69F8D /* XCDYouTubeKit */,
 				0D24A1D52722719400C69F8D /* Introspect */,
-				0D5AC858274CA4DE00669569 /* MailCore2 */,
 				0D5AC85A274CA4E200669569 /* SwiftKeychainWrapper */,
 				0D5AC85C274CA4E500669569 /* OAuth2 */,
 			);
@@ -2431,9 +2427,9 @@
 				0D8045042669CAB900000171 /* Camera-SwiftUI */,
 				0DAA7CF626CB542800F62A27 /* XCDYouTubeKit */,
 				0D249CAF271FC6A800C69F8D /* Introspect */,
-				0DFCA90C272C83530050009D /* MailCore2 */,
 				0DBD28BA274C21F8003120D9 /* SwiftKeychainWrapper */,
 				0D5AC820274C74C000669569 /* OAuth2 */,
+				0D252B102EAD7C7500851164 /* MailCore2 */,
 			);
 			productName = OldOS;
 			productReference = 0D39B3EC25AA9EB600B42A84 /* OldOS.app */;
@@ -2531,7 +2527,6 @@
 				0DBD28CF274C70F8003120D9 /* Camera-SwiftUI */,
 				0DBD28D0274C70F8003120D9 /* XCDYouTubeKit */,
 				0DBD28D2274C70F8003120D9 /* Introspect */,
-				0D5AC85E274CA4EC00669569 /* MailCore2 */,
 				0D5AC860274CA4F000669569 /* OAuth2 */,
 				0D5AC862274CA4F400669569 /* SwiftKeychainWrapper */,
 			);
@@ -2581,7 +2576,6 @@
 				0DEF67052610F50400341037 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0DAA7CF526CB542800F62A27 /* XCRemoteSwiftPackageReference "XCDYouTubeKit" */,
 				0D249CAE271FC6A800C69F8D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
-				0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */,
 				0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */,
 			);
@@ -3205,6 +3199,7 @@
 				0D18DF43281C408500C720F9 /* AppDelegate.swift in Sources */,
 				0D18DF44281C408500C720F9 /* DALinedTextView.m in Sources */,
 				0D18DF45281C408500C720F9 /* iCarousel.m in Sources */,
+				0D9F02EE2EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D18DF46281C408500C720F9 /* SearchPlistCodable.swift in Sources */,
 				0D18DF47281C408500C720F9 /* USRuleset.swift in Sources */,
 				0D18DF48281C408500C720F9 /* ReflectionView.m in Sources */,
@@ -3228,6 +3223,7 @@
 				0D18DF5A281C408500C720F9 /* Note.xcdatamodeld in Sources */,
 				0D18DF5B281C408500C720F9 /* PhoneFormatter.swift in Sources */,
 				0D18DF5C281C408500C720F9 /* Notes.swift in Sources */,
+				0D90AAEC2EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D18DF5D281C408500C720F9 /* Safari.swift in Sources */,
 				0D18DF5E281C408500C720F9 /* GameCenter.swift in Sources */,
 				0D18DF5F281C408500C720F9 /* HomeScreen.swift in Sources */,
@@ -3259,6 +3255,7 @@
 				0D249DBD272270C300C69F8D /* AppDelegate.swift in Sources */,
 				0D249DBE272270C300C69F8D /* DALinedTextView.m in Sources */,
 				0D249DBF272270C300C69F8D /* iCarousel.m in Sources */,
+				0D9F02E32EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D249DC0272270C300C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D249DC1272270C300C69F8D /* USRuleset.swift in Sources */,
 				0D249DC2272270C300C69F8D /* ReflectionView.m in Sources */,
@@ -3282,6 +3279,7 @@
 				0D249DD4272270C300C69F8D /* Note.xcdatamodeld in Sources */,
 				0D249DD5272270C300C69F8D /* PhoneFormatter.swift in Sources */,
 				0D249DD6272270C300C69F8D /* Notes.swift in Sources */,
+				0D90AAE12EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D249DD7272270C300C69F8D /* Safari.swift in Sources */,
 				0D249DD8272270C300C69F8D /* GameCenter.swift in Sources */,
 				0D249DD9272270C300C69F8D /* HomeScreen.swift in Sources */,
@@ -3313,6 +3311,7 @@
 				0D249E332722715B00C69F8D /* AppDelegate.swift in Sources */,
 				0D249E342722715B00C69F8D /* DALinedTextView.m in Sources */,
 				0D249E352722715B00C69F8D /* iCarousel.m in Sources */,
+				0D9F02E42EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D249E362722715B00C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D249E372722715B00C69F8D /* USRuleset.swift in Sources */,
 				0D249E382722715B00C69F8D /* ReflectionView.m in Sources */,
@@ -3336,6 +3335,7 @@
 				0D249E4A2722715B00C69F8D /* Note.xcdatamodeld in Sources */,
 				0D249E4B2722715B00C69F8D /* PhoneFormatter.swift in Sources */,
 				0D249E4C2722715B00C69F8D /* Notes.swift in Sources */,
+				0D90AAE22EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D249E4D2722715B00C69F8D /* Safari.swift in Sources */,
 				0D249E4E2722715B00C69F8D /* GameCenter.swift in Sources */,
 				0D249E4F2722715B00C69F8D /* HomeScreen.swift in Sources */,
@@ -3367,6 +3367,7 @@
 				0D249EA92722715C00C69F8D /* AppDelegate.swift in Sources */,
 				0D249EAA2722715C00C69F8D /* DALinedTextView.m in Sources */,
 				0D249EAB2722715C00C69F8D /* iCarousel.m in Sources */,
+				0D9F02E52EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D249EAC2722715C00C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D249EAD2722715C00C69F8D /* USRuleset.swift in Sources */,
 				0D249EAE2722715C00C69F8D /* ReflectionView.m in Sources */,
@@ -3390,6 +3391,7 @@
 				0D249EC02722715C00C69F8D /* Note.xcdatamodeld in Sources */,
 				0D249EC12722715C00C69F8D /* PhoneFormatter.swift in Sources */,
 				0D249EC22722715C00C69F8D /* Notes.swift in Sources */,
+				0D90AAE32EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D249EC32722715C00C69F8D /* Safari.swift in Sources */,
 				0D249EC42722715C00C69F8D /* GameCenter.swift in Sources */,
 				0D249EC52722715C00C69F8D /* HomeScreen.swift in Sources */,
@@ -3421,6 +3423,7 @@
 				0D249F1F2722715D00C69F8D /* AppDelegate.swift in Sources */,
 				0D249F202722715D00C69F8D /* DALinedTextView.m in Sources */,
 				0D249F212722715D00C69F8D /* iCarousel.m in Sources */,
+				0D9F02E62EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D249F222722715D00C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D249F232722715D00C69F8D /* USRuleset.swift in Sources */,
 				0D249F242722715D00C69F8D /* ReflectionView.m in Sources */,
@@ -3444,6 +3447,7 @@
 				0D249F362722715D00C69F8D /* Note.xcdatamodeld in Sources */,
 				0D249F372722715D00C69F8D /* PhoneFormatter.swift in Sources */,
 				0D249F382722715D00C69F8D /* Notes.swift in Sources */,
+				0D90AAE42EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D249F392722715D00C69F8D /* Safari.swift in Sources */,
 				0D249F3A2722715D00C69F8D /* GameCenter.swift in Sources */,
 				0D249F3B2722715D00C69F8D /* HomeScreen.swift in Sources */,
@@ -3475,6 +3479,7 @@
 				0D249F952722715E00C69F8D /* AppDelegate.swift in Sources */,
 				0D249F962722715E00C69F8D /* DALinedTextView.m in Sources */,
 				0D249F972722715E00C69F8D /* iCarousel.m in Sources */,
+				0D9F02E72EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D249F982722715E00C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D249F992722715E00C69F8D /* USRuleset.swift in Sources */,
 				0D249F9A2722715E00C69F8D /* ReflectionView.m in Sources */,
@@ -3498,6 +3503,7 @@
 				0D249FAC2722715E00C69F8D /* Note.xcdatamodeld in Sources */,
 				0D249FAD2722715E00C69F8D /* PhoneFormatter.swift in Sources */,
 				0D249FAE2722715E00C69F8D /* Notes.swift in Sources */,
+				0D90AAE52EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D249FAF2722715E00C69F8D /* Safari.swift in Sources */,
 				0D249FB02722715E00C69F8D /* GameCenter.swift in Sources */,
 				0D249FB12722715E00C69F8D /* HomeScreen.swift in Sources */,
@@ -3529,6 +3535,7 @@
 				0D24A00B2722716000C69F8D /* AppDelegate.swift in Sources */,
 				0D24A00C2722716000C69F8D /* DALinedTextView.m in Sources */,
 				0D24A00D2722716000C69F8D /* iCarousel.m in Sources */,
+				0D9F02E82EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D24A00E2722716000C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D24A00F2722716000C69F8D /* USRuleset.swift in Sources */,
 				0D24A0102722716000C69F8D /* ReflectionView.m in Sources */,
@@ -3552,6 +3559,7 @@
 				0D24A0222722716000C69F8D /* Note.xcdatamodeld in Sources */,
 				0D24A0232722716000C69F8D /* PhoneFormatter.swift in Sources */,
 				0D24A0242722716000C69F8D /* Notes.swift in Sources */,
+				0D90AAE62EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D24A0252722716000C69F8D /* Safari.swift in Sources */,
 				0D24A0262722716000C69F8D /* GameCenter.swift in Sources */,
 				0D24A0272722716000C69F8D /* HomeScreen.swift in Sources */,
@@ -3583,6 +3591,7 @@
 				0D24A0812722716500C69F8D /* AppDelegate.swift in Sources */,
 				0D24A0822722716500C69F8D /* DALinedTextView.m in Sources */,
 				0D24A0832722716500C69F8D /* iCarousel.m in Sources */,
+				0D9F02E92EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D24A0842722716500C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D24A0852722716500C69F8D /* USRuleset.swift in Sources */,
 				0D24A0862722716500C69F8D /* ReflectionView.m in Sources */,
@@ -3606,6 +3615,7 @@
 				0D24A0982722716500C69F8D /* Note.xcdatamodeld in Sources */,
 				0D24A0992722716500C69F8D /* PhoneFormatter.swift in Sources */,
 				0D24A09A2722716500C69F8D /* Notes.swift in Sources */,
+				0D90AAE72EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D24A09B2722716500C69F8D /* Safari.swift in Sources */,
 				0D24A09C2722716500C69F8D /* GameCenter.swift in Sources */,
 				0D24A09D2722716500C69F8D /* HomeScreen.swift in Sources */,
@@ -3637,6 +3647,7 @@
 				0D24A0F72722716600C69F8D /* AppDelegate.swift in Sources */,
 				0D24A0F82722716600C69F8D /* DALinedTextView.m in Sources */,
 				0D24A0F92722716600C69F8D /* iCarousel.m in Sources */,
+				0D9F02EA2EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D24A0FA2722716600C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D24A0FB2722716600C69F8D /* USRuleset.swift in Sources */,
 				0D24A0FC2722716600C69F8D /* ReflectionView.m in Sources */,
@@ -3660,6 +3671,7 @@
 				0D24A10E2722716600C69F8D /* Note.xcdatamodeld in Sources */,
 				0D24A10F2722716600C69F8D /* PhoneFormatter.swift in Sources */,
 				0D24A1102722716600C69F8D /* Notes.swift in Sources */,
+				0D90AAE82EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D24A1112722716600C69F8D /* Safari.swift in Sources */,
 				0D24A1122722716600C69F8D /* GameCenter.swift in Sources */,
 				0D24A1132722716600C69F8D /* HomeScreen.swift in Sources */,
@@ -3691,6 +3703,7 @@
 				0D24A16D2722719000C69F8D /* AppDelegate.swift in Sources */,
 				0D24A16E2722719000C69F8D /* DALinedTextView.m in Sources */,
 				0D24A16F2722719000C69F8D /* iCarousel.m in Sources */,
+				0D9F02EB2EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D24A1702722719000C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D24A1712722719000C69F8D /* USRuleset.swift in Sources */,
 				0D24A1722722719000C69F8D /* ReflectionView.m in Sources */,
@@ -3714,6 +3727,7 @@
 				0D24A1842722719000C69F8D /* Note.xcdatamodeld in Sources */,
 				0D24A1852722719000C69F8D /* PhoneFormatter.swift in Sources */,
 				0D24A1862722719000C69F8D /* Notes.swift in Sources */,
+				0D90AAE92EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D24A1872722719000C69F8D /* Safari.swift in Sources */,
 				0D24A1882722719000C69F8D /* GameCenter.swift in Sources */,
 				0D24A1892722719000C69F8D /* HomeScreen.swift in Sources */,
@@ -3745,6 +3759,7 @@
 				0D24A1E32722719400C69F8D /* AppDelegate.swift in Sources */,
 				0D24A1E42722719400C69F8D /* DALinedTextView.m in Sources */,
 				0D24A1E52722719400C69F8D /* iCarousel.m in Sources */,
+				0D9F02EC2EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D24A1E62722719400C69F8D /* SearchPlistCodable.swift in Sources */,
 				0D24A1E72722719400C69F8D /* USRuleset.swift in Sources */,
 				0D24A1E82722719400C69F8D /* ReflectionView.m in Sources */,
@@ -3768,6 +3783,7 @@
 				0D24A1FA2722719400C69F8D /* Note.xcdatamodeld in Sources */,
 				0D24A1FB2722719400C69F8D /* PhoneFormatter.swift in Sources */,
 				0D24A1FC2722719400C69F8D /* Notes.swift in Sources */,
+				0D90AAEA2EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D24A1FD2722719400C69F8D /* Safari.swift in Sources */,
 				0D24A1FE2722719400C69F8D /* GameCenter.swift in Sources */,
 				0D24A1FF2722719400C69F8D /* HomeScreen.swift in Sources */,
@@ -3799,6 +3815,7 @@
 				0D39B3F025AA9EB600B42A84 /* AppDelegate.swift in Sources */,
 				0DEF67242613CBDE00341037 /* DALinedTextView.m in Sources */,
 				0DC40DED2715DA7600BE910C /* iCarousel.m in Sources */,
+				0D9F02E22EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0DEF6710261101AE00341037 /* SearchPlistCodable.swift in Sources */,
 				0D11D89725EDD2BC00AB2F2B /* USRuleset.swift in Sources */,
 				0DC40DEE2715DA7600BE910C /* ReflectionView.m in Sources */,
@@ -3822,6 +3839,7 @@
 				0DEF67352617668200341037 /* Note.xcdatamodeld in Sources */,
 				0D11D89825EDD2BC00AB2F2B /* PhoneFormatter.swift in Sources */,
 				0DEF6715261279A200341037 /* Notes.swift in Sources */,
+				0D90AAE02EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D11D84E25E19F9400AB2F2B /* Safari.swift in Sources */,
 				0D818C2125F67DD900824F8E /* GameCenter.swift in Sources */,
 				0D39B3F425AA9EB600B42A84 /* HomeScreen.swift in Sources */,
@@ -3869,6 +3887,7 @@
 				0D6715C92864BCD0002CCC47 /* AppDelegate.swift in Sources */,
 				0D6715CA2864BCD0002CCC47 /* DALinedTextView.m in Sources */,
 				0D6715CB2864BCD0002CCC47 /* iCarousel.m in Sources */,
+				0D9F02EF2EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0D6715CC2864BCD0002CCC47 /* SearchPlistCodable.swift in Sources */,
 				0D6715CD2864BCD0002CCC47 /* USRuleset.swift in Sources */,
 				0D6715CE2864BCD0002CCC47 /* ReflectionView.m in Sources */,
@@ -3892,6 +3911,7 @@
 				0D6715E02864BCD0002CCC47 /* Note.xcdatamodeld in Sources */,
 				0D6715E12864BCD0002CCC47 /* PhoneFormatter.swift in Sources */,
 				0D6715E22864BCD0002CCC47 /* Notes.swift in Sources */,
+				0D90AAED2EAD25B1001366C9 /* Compass.swift in Sources */,
 				0D6715E32864BCD0002CCC47 /* Safari.swift in Sources */,
 				0D6715E42864BCD0002CCC47 /* GameCenter.swift in Sources */,
 				0D6715E52864BCD0002CCC47 /* HomeScreen.swift in Sources */,
@@ -3923,6 +3943,7 @@
 				0DBD28E0274C70F8003120D9 /* AppDelegate.swift in Sources */,
 				0DBD28E1274C70F8003120D9 /* DALinedTextView.m in Sources */,
 				0DBD28E2274C70F8003120D9 /* iCarousel.m in Sources */,
+				0D9F02ED2EAE721100D9AAB4 /* Voice Memos.swift in Sources */,
 				0DBD28E3274C70F8003120D9 /* SearchPlistCodable.swift in Sources */,
 				0DBD28E4274C70F8003120D9 /* USRuleset.swift in Sources */,
 				0DBD28E5274C70F8003120D9 /* ReflectionView.m in Sources */,
@@ -3946,6 +3967,7 @@
 				0DBD28F7274C70F8003120D9 /* Note.xcdatamodeld in Sources */,
 				0DBD28F8274C70F8003120D9 /* PhoneFormatter.swift in Sources */,
 				0DBD28F9274C70F8003120D9 /* Notes.swift in Sources */,
+				0D90AAEB2EAD25B1001366C9 /* Compass.swift in Sources */,
 				0DBD28FA274C70F8003120D9 /* Safari.swift in Sources */,
 				0DBD28FB274C70F8003120D9 /* GameCenter.swift in Sources */,
 				0DBD28FC274C70F8003120D9 /* HomeScreen.swift in Sources */,
@@ -4698,6 +4720,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4715,7 +4738,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -4761,6 +4785,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -4772,6 +4797,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -4789,10 +4815,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = OldOS/OldOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"OldOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZYLGK4GUG7;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -4804,9 +4831,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zurac.OldOSSL2;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zrc.BudgetingBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_EXPLICIT_MODULES = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "OldOS/TextView/OldOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -4822,10 +4852,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = OldOS/OldOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"OldOS/Preview Content\"";
 				DEVELOPMENT_TEAM = ZYLGK4GUG7;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				INFOPLIST_FILE = OldOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -4833,9 +4864,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zurac.OldOSSL2;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zrc.BudgetingBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_EXPLICIT_MODULES = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "OldOS/TextView/OldOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6283,14 +6317,6 @@
 				minimumVersion = 5.4.1;
 			};
 		};
-		0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MailCore/mailcore2";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -6863,6 +6889,10 @@
 			package = 0D24A1D62722719400C69F8D /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
 		};
+		0D252B102EAD7C7500851164 /* MailCore2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MailCore2;
+		};
 		0D371FDB25AB854F00E4D723 /* PureSwiftUITools */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0D371FDA25AB854F00E4D723 /* XCRemoteSwiftPackageReference "pure-swift-ui-tools" */;
@@ -6878,11 +6908,6 @@
 			package = 0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */;
 			productName = OAuth2;
 		};
-		0D5AC822274C74F700669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
-		};
 		0D5AC824274C751100669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */;
@@ -6892,11 +6917,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
-		};
-		0D5AC828274C752200669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
 		};
 		0D5AC82A274C752600669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -6908,11 +6928,6 @@
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
 		};
-		0D5AC82E274C753100669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
-		};
 		0D5AC830274C753500669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */;
@@ -6922,11 +6937,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
-		};
-		0D5AC834274C754200669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
 		};
 		0D5AC836274C754600669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -6938,11 +6948,6 @@
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
 		};
-		0D5AC83A274C754F00669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
-		};
 		0D5AC83C274C755500669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */;
@@ -6952,11 +6957,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
-		};
-		0D5AC840274CA4A500669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
 		};
 		0D5AC842274CA4A900669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -6968,11 +6968,6 @@
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
 		};
-		0D5AC846274CA4B300669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
-		};
 		0D5AC848274CA4B700669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */;
@@ -6982,11 +6977,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
-		};
-		0D5AC84C274CA4C100669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
 		};
 		0D5AC84E274CA4C500669569 /* SwiftKeychainWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -6998,11 +6988,6 @@
 			package = 0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */;
 			productName = OAuth2;
 		};
-		0D5AC852274CA4D100669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
-		};
 		0D5AC854274CA4D500669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */;
@@ -7013,11 +6998,6 @@
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
 			productName = SwiftKeychainWrapper;
 		};
-		0D5AC858274CA4DE00669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
-		};
 		0D5AC85A274CA4E200669569 /* SwiftKeychainWrapper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0DBD28B9274C21F8003120D9 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
@@ -7027,11 +7007,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0D5AC81F274C74C000669569 /* XCRemoteSwiftPackageReference "OAuth2" */;
 			productName = OAuth2;
-		};
-		0D5AC85E274CA4EC00669569 /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
 		};
 		0D5AC860274CA4F000669569 /* OAuth2 */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -7184,11 +7159,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0DEF67052610F50400341037 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		0DFCA90C272C83530050009D /* MailCore2 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0DFCA90B272C83530050009D /* XCRemoteSwiftPackageReference "mailcore2" */;
-			productName = MailCore2;
 		};
 /* End XCSwiftPackageProductDependency section */
 

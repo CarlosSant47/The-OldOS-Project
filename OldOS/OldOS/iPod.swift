@@ -458,7 +458,8 @@ struct now_playing_tracks: View {
                     if let current = current {
                         let nsNumberRating = NSNumber(value: rating ?? 1)
                         if current.responds(to: Selector("setRating:")) {
-                            current.setValue(nsNumberRating, forKey: "rating")
+                            print("Ratings paused for now")
+                            //current.setValue(nsNumberRating, forKey: "rating")
                         } else {
                             print("Unresponsive to setting, problem with k/v")
                         }

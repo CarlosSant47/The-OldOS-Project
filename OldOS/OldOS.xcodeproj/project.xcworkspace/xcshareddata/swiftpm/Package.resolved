@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "ctemplate",
+        "repositoryURL": "https://github.com/jsflax/ctemplate/",
+        "state": {
+          "branch": "master",
+          "revision": "0a57d6df8e4c13b4730689493d7b83556ace4925",
+          "version": null
+        }
+      },
+      {
         "package": "FeedKit",
         "repositoryURL": "https://github.com/nmdias/FeedKit.git",
         "state": {
@@ -20,21 +29,21 @@
         }
       },
       {
+        "package": "libetpan",
+        "repositoryURL": "https://github.com/jsflax/libetpan/",
+        "state": {
+          "branch": "master",
+          "revision": "62931a67c91671110def6c42827376f47b106d84",
+          "version": null
+        }
+      },
+      {
         "package": "LocationProvider",
         "repositoryURL": "https://github.com/himbeles/LocationProvider.git",
         "state": {
           "branch": null,
           "revision": "929019fb7b9c337a79aee25bcaf297b18faf728d",
           "version": "1.6.0"
-        }
-      },
-      {
-        "package": "MailCore2",
-        "repositoryURL": "https://github.com/MailCore/mailcore2",
-        "state": {
-          "branch": "master",
-          "revision": "7417b2e8dd7e2c028aadb72056e4d1428c0627c4",
-          "version": null
         }
       },
       {
@@ -116,6 +125,15 @@
           "branch": null,
           "revision": "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
           "version": "5.0.1"
+        }
+      },
+      {
+        "package": "tidy",
+        "repositoryURL": "https://github.com/jsflax/tidy-html5/",
+        "state": {
+          "branch": "master",
+          "revision": "d7a0c39c314683be796ccd2133ed79001c0a048c",
+          "version": null
         }
       },
       {

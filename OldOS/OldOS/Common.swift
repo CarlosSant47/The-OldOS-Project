@@ -1645,6 +1645,214 @@ struct CustomSlider<Component: View>: View {
     }
 }
 
+extension Notification.Name {
+    static let memoSliderDidScrub     = Notification.Name("MemoSliderDidScrub")      // userInfo: ["time": Double]
+    static let memoSliderDidEndScrub  = Notification.Name("MemoSliderDidEndScrub")   // userInfo: ["time": Double]
+}
+
+import SwiftUI
+import MediaPlayer
+
+private let kEps: Double = 1e-9
+
+struct CustomSliderMemo<Component: View>: View {
+    @Binding var value: Double
+    @Binding var should_update_from_timer: Bool?
+    var duration: Double?
+    var type: String
+    var range: (Double, Double)
+    var knobWidth: CGFloat?
+    let viewBuilder: (CustomSliderComponents) -> Component
+
+    init(type: String,
+         should_update_from_timer: Binding<Bool?> = .constant(true),
+         duration: Double = 0,
+         value: Binding<Double>,
+         range: (Double, Double),
+         knobWidth: CGFloat? = nil,
+         _ viewBuilder: @escaping (CustomSliderComponents) -> Component
+    ) {
+        self.type = type
+        _should_update_from_timer = should_update_from_timer
+        self.duration = duration
+        _value = value
+        self.range = range
+        self.viewBuilder = viewBuilder
+        self.knobWidth = knobWidth
+    }
+
+    var body: some View {
+        GeometryReader { geometry in
+            self.view(geometry: geometry)
+        }
+    }
+
+    private func view(geometry: GeometryProxy) -> some View {
+        var frame = geometry.localFrame
+        if type == "Song" || type == "Memo" {
+            frame = geometry.frame(in: .local)
+        } else {
+            frame = geometry.frame(in: .global)
+        }
+
+        // ⛑ Ensure sane, non-zero geometry to avoid CALayer invalid sizes
+        frame.size.width  = max(frame.size.width, 1)
+        frame.size.height = max(frame.size.height, 1)
+
+        let drag = DragGesture(minimumDistance: 0)
+            .onChanged { drag in
+                self.onSliderDragChange(drag, frame)
+            }
+            .onEnded { drag in
+                if type == "Song" {
+                    should_update_from_timer = true
+                }
+                if type == "Memo" {
+                    // finalize seek for memos — only if we have a valid duration
+                    guard let dur = duration, dur > 0 else {
+                        should_update_from_timer = true
+                        return
+                    }
+                    let finalTime = clampedTime(from: drag, frame: frame, safeDuration: dur)
+                    NotificationCenter.default.post(
+                        name: .memoSliderDidEndScrub,
+                        object: nil,
+                        userInfo: ["time": finalTime]
+                    )
+                    should_update_from_timer = true
+                }
+            }
+
+        let offsetX = max(0, self.getOffsetX(frame: frame)) // ⛑ clamp ≥ 0
+
+        let kH = frame.height
+        let kW = max(self.knobWidth ?? kH, 0)               // ⛑ knob width ≥ 0
+        let knobSize = CGSize(width: kW, height: kH)
+
+        let leftW  = max(CGFloat(offsetX) + knobSize.width * 0.5, 0)    // ⛑ ≥ 0
+        let totalW = max(frame.width, 0)
+        let rightW = max(totalW - leftW, 0)                               // ⛑ ≥ 0
+
+        let barLeftSize  = CGSize(width: leftW,  height: frame.height)
+        let barRightSize = CGSize(width: rightW, height: frame.height)
+
+        let modifiers = CustomSliderComponents(
+            barLeft:  CustomSliderModifier(name: .barLeft,  size: barLeftSize,  offset: 0),
+            barRight: CustomSliderModifier(name: .barRight, size: barRightSize, offset: leftW),
+            knob:     CustomSliderModifier(name: .knob,     size: knobSize,     offset: offsetX)
+        )
+
+        return ZStack {
+            viewBuilder(modifiers).gesture(drag)
+        }
+    }
+
+    private func onSliderDragChange(_ drag: DragGesture.Value, _ frame: CGRect) {
+        let viewW = Double(max(frame.size.width, 1))                    // ⛑ ≥ 1
+        let kW    = Double(max((knobWidth ?? frame.size.height), 0))    // ⛑ ≥ 0
+        let usable = max(viewW - kW, 0)                                 // ⛑ ≥ 0
+        let xrange = (min: 0.0, max: usable)
+
+        var v = Double(drag.startLocation.x + drag.translation.width)   // knob center x
+        v -= 0.5 * kW                                                  // to leading edge
+        v = min(max(v, xrange.min), xrange.max)
+
+        // ⛑ Guard range span to avoid NaN
+        let rMin = range.0
+        let rMax = range.1
+        let span = max(rMax - rMin, kEps)
+
+        // map position → slider value in provided range
+        let t = usable > 0 ? (v / usable) : 0
+        let newValue = rMin + t * span
+        self.value = newValue
+
+        if type == "Brightness" {
+            UIScreen.main.brightness = CGFloat(newValue / 100)
+        }
+
+        if type == "Volume" {
+            MPVolumeView.setVolume(Float(newValue / 100))
+        }
+
+        if type == "Song" {
+            should_update_from_timer = false
+            let music_player = MPMusicPlayerController.systemMusicPlayer
+            DispatchQueue.global(qos: .background).async {
+                let dur = max(self.duration ?? 0, 0)
+                let safe = dur > 0 ? (newValue / 100 * dur) : 0          // ⛑ safe seek
+                music_player.currentPlaybackTime = safe
+            }
+        }
+
+        if type == "Memo" {
+            // Pause timer-driven updates while dragging and notify the player — only if valid duration
+            should_update_from_timer = false
+            guard let dur = duration, dur > 0 else { return }           // ⛑ nothing loaded
+            let tSec = timeFromValue(newValue, safeDuration: dur)        // seconds
+            NotificationCenter.default.post(
+                name: .memoSliderDidScrub,
+                object: nil,
+                userInfo: ["time": tSec]
+            )
+        }
+    }
+
+    private func clampedTime(from drag: DragGesture.Value, frame: CGRect, safeDuration: Double) -> Double {
+        let viewW = Double(max(frame.size.width, 1))
+        let kW    = Double(max((knobWidth ?? frame.size.height), 0))
+        let usable = max(viewW - kW, 0)
+        let xrange = (min: 0.0, max: usable)
+
+        var v = Double(drag.startLocation.x + drag.translation.width)
+        v -= 0.5 * kW
+        v = min(max(v, xrange.min), xrange.max)
+
+        let rMin = range.0
+        let rMax = range.1
+        let span = max(rMax - rMin, kEps)
+
+        let t = usable > 0 ? (v / usable) : 0
+        let val = rMin + t * span
+        return timeFromValue(val, safeDuration: safeDuration)
+    }
+
+    private func timeFromValue(_ val: Double, safeDuration: Double) -> Double {
+        // If using legacy 0...100 range, map to seconds via duration; else val is already seconds.
+        if abs((range.1 - range.0) - 100) < 0.5 {
+            return safeDuration > 0 ? (val / 100.0) * safeDuration : 0
+        } else {
+            // clamp inside [0, duration] if duration is known
+            return safeDuration > 0 ? min(max(val, 0), safeDuration) : max(val, 0)
+        }
+    }
+
+    private func timeFromValue(_ val: Double) -> Double {
+        // Backward-compatible overload; used in onChanged before checking duration
+        if let dur = duration, abs((range.1 - range.0) - 100) < 0.5 {
+            return dur > 0 ? (val / 100.0) * dur : 0
+        } else {
+            return val
+        }
+    }
+
+    private func getOffsetX(frame: CGRect) -> CGFloat {
+        let viewW = max(frame.size.width, 1)
+        let kW    = max((knobWidth ?? frame.size.height), 0)
+        let usable = max(Double(viewW - kW), 0)
+
+        let rMin = range.0
+        let rMax = range.1
+        let span = max(rMax - rMin, kEps)        // ⛑ avoid /0
+
+        let t = (self.value - rMin) / span
+        let x = CGFloat(min(max(t, 0), 1)) * CGFloat(usable)
+        return max(x, 0)                          // ⛑ ≥ 0
+    }
+}
+
+
+
 struct CustomSliderVideo<Component: View>: View {
     @Binding var value: Double
     @Binding var should_update_from_timer: Bool?

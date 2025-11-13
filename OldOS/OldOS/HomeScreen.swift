@@ -133,6 +133,9 @@ struct Controller: View {
                             case "Compass":
                                 multitasking_controller(current_view: $current_view, apps_scale: $apps_scale, dock_offset: $dock_offset, multitasking_apps: $multitasking_apps, instant_multitasking_change: $instant_multitasking_change, current_multitasking_app: $current_multitasking_app, should_update: $should_update, show_remove: $show_remove, show_multitasking: $show_multitasking, relative_app: "Compass")
                                 Compass(current_view: $current_view).padding([.leading, .trailing]).transition(.scale).modifiedForMultitasking2(show_multitasking, instant_multitasking_change, current_multitasking_app == "Compass")
+                            case "Voice Memos":
+                                multitasking_controller(current_view: $current_view, apps_scale: $apps_scale, dock_offset: $dock_offset, multitasking_apps: $multitasking_apps, instant_multitasking_change: $instant_multitasking_change, current_multitasking_app: $current_multitasking_app, should_update: $should_update, show_remove: $show_remove, show_multitasking: $show_multitasking, relative_app: "Voice Memos")
+                                VoiceMemos().padding([.leading, .trailing]).transition(.scale).modifiedForMultitasking2(show_multitasking, instant_multitasking_change, current_multitasking_app == "Voice Memos")
                             default:
                                 LockScreen(current_view: $current_view, apps_scale: $apps_scale, dock_offset: $dock_offset, apps_scale_height: $apps_scale_height).padding([.leading, .trailing])
                             }
@@ -974,7 +977,7 @@ struct folder_apps: View {
                 app(image_name: "Clock", app_name: "Clock", current_view: $current_view, apps_scale: $apps_scale, dock_offset: $dock_offset, folder_offset: $folder_offset, is_folder_app: true)
                 app(image_name: "Calculator", app_name: "Calculator", current_view: $current_view, apps_scale: $apps_scale, dock_offset: $dock_offset, folder_offset: $folder_offset, is_folder_app: true)
                 app(image_name: "Compass", app_name: "Compass", current_view: $current_view, apps_scale: $apps_scale, dock_offset: $dock_offset, folder_offset: $folder_offset, is_folder_app: true)
-                app(image_name: "Voice Memos  4.2.1", app_name: "Voice Memos", current_view: $current_view, apps_scale: $apps_scale, dock_offset: $dock_offset, folder_offset: $folder_offset, is_folder_app: true)
+                app(image_name: "Voice Memos", app_name: "Voice Memos", current_view: $current_view, apps_scale: $apps_scale, dock_offset: $dock_offset, folder_offset: $folder_offset, is_folder_app: true)
             }.onAppear() {
             UIApplication.shared.endEditing()
         }//.offset(y:-15)
@@ -1352,7 +1355,7 @@ struct app: View {
     
     var body: some View {
         Button(action: {
-            if !["Clock", "Calculator", "Voice Memos"].contains(app_name) {
+            if !["Clock", "Calculator"].contains(app_name) {
                 if !is_folder_app {
                     withAnimation(.linear(duration: 0.32)) {
                         apps_scale = 4
